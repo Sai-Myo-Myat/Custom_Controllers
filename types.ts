@@ -14,6 +14,7 @@ export interface CustomBtnType {
   onPressFun: () => void;
 }
 
-export interface RootStackParamsList {
+export type RootStackParamsList = {
   Home: undefined;
-}
+  Form: undefined;
+};
