@@ -1,12 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { useForm } from 'react-hook-form';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {useForm} from 'react-hook-form';
+import {StyleSheet, View} from 'react-native';
+
+//types
+import CheckBox from './Custom_Controllers/CheckBox';
+import {FormInputType} from './types';
 
 export default function App() {
+  const {control} = useForm<FormInputType>();
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <CheckBox
+        control={control}
+        label="Is it help for you?"
+        isChecked={false}
+      />
     </View>
   );
 }
