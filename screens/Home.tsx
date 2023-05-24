@@ -1,10 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {useFormContext} from 'react-hook-form';
+import {Text, View} from 'react-native';
 
 const Home = () => {
+  const {getValues} = useFormContext();
+  const {isChecked} = getValues();
   return (
     <View>
-      <Text>Home</Text>
+      <Text>{isChecked ? "You've accepted!" : "You didn't accepted!!!"}</Text>
     </View>
   );
 };

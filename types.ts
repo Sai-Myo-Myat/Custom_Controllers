@@ -1,6 +1,5 @@
 export interface FormInputType {
   isChecked: false | true;
-  isGood: true;
 }
 
 export interface CheckBoxType {

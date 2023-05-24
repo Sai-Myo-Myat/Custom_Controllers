@@ -1,21 +1,21 @@
-import {useForm} from 'react-hook-form';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack/lib/typescript/src/types';
+import {useCallback} from 'react';
+import {useFormContext} from 'react-hook-form';
 import React, {View} from 'react-native';
 import tw from 'twrnc';
 
 //types
-import {FormInputType, RootStackParamsList} from '../types';
+import {RootStackParamsList} from '../types';
 
 //components
-import {useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack/lib/typescript/src/types';
-import {useCallback} from 'react';
 import CustomButton from '../components/CustomButton';
 import CheckBox from '../custom_controllers/CheckBox';
 
 const Form = () => {
   const {navigate} =
     useNavigation<NativeStackNavigationProp<RootStackParamsList, 'Form'>>();
-  const {control} = useForm<FormInputType>();
+  const {control} = useFormContext();
 
   const goToHome = useCallback(() => {
     navigate('Home');
