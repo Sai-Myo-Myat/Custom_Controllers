@@ -1,22 +1,20 @@
+//dependencies
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import tw from 'twrnc';
 
-//compnents
-import Form from './Screens/Form';
+//components
+
+import Form from './screens/Form';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={[tw`bg-black`, styles.container]}>
-      <Form />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Form} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

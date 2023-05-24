@@ -30,19 +30,15 @@ const CheckBox: FC<CheckBoxType> = props => {
   console.log('value', value, '\n', 'isChecked', isChecked);
 
   return (
-    <View style={[tw`flex-row gap-3 items-center`]}>
+    <View style={[tw`flex-row gap-3 items-center m-3`]}>
       <Pressable onPress={onChangeX}>
-        <View style={[tw`border-white border  w-5 h-5`]}>
-          <Text style={[tw`text-white`]}>
-            {isChecked ? (
-              <AntDesign name="check" size={18} color="white" />
-            ) : (
-              ''
-            )}
+        <View style={[tw`border-blue-500 border  w-5 h-5`]}>
+          <Text style={[tw``]}>
+            {isChecked ? <AntDesign name="check" size={18} color="blue" /> : ''}
           </Text>
         </View>
       </Pressable>
-      <Text style={[tw`text-white text-lg`]}>{label || 'good'}</Text>
+      <Text style={[tw`text-blue-500 text-lg`]}>{label || 'good'}</Text>
     </View>
   );
 };
