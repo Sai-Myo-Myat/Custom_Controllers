@@ -8,3 +8,12 @@ export interface CheckBoxType {
   name: string;
   label: string;
 }
+
+export interface CustomBtnType {
+  title: string;
+  onPressFun: () => void;
+}
+
+export interface RootStackParamsList {
+  Home: undefined;
+}
