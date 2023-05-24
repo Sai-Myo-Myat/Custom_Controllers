@@ -1,20 +1,14 @@
 import React from 'react';
-import {useForm} from 'react-hook-form';
 import {StyleSheet, View} from 'react-native';
+import tw from 'twrnc';
 
-//types
-import CheckBox from './Custom_Controllers/CheckBox';
-import {FormInputType} from './types';
+//compnents
+import Form from './Screens/Form';
 
 export default function App() {
-  const {control} = useForm<FormInputType>();
   return (
-    <View style={styles.container}>
-      <CheckBox
-        control={control}
-        label="Is it help for you?"
-        isChecked={false}
-      />
+    <View style={[tw`bg-black`, styles.container]}>
+      <Form />
     </View>
   );
 }
@@ -22,7 +16,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
