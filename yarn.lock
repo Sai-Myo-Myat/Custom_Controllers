@@ -4263,13 +4263,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert-source-map@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "convert-source-map@npm:2.0.0"
-  checksum: 5a2bc5c8cbb87e36d9c33c541eccc1eb61480d72a1cda03ccaf00346479e788994ccbc80bd00874390a9a38c07b68f195991622f4ad8a5b791a0e90870e25450
-  languageName: node
-  linkType: hard
-
 "copy-descriptor@npm:^0.1.0":
   version: 0.1.1
   resolution: "copy-descriptor@npm:0.1.1"
@@ -4396,9 +4389,9 @@ __metadata:
     react: "npm:18.2.0"
     react-hook-form: "npm:^7.43.9"
     react-native: "npm:0.71.8"
-    react-native-gesture-handler: "npm:^2.10.1"
-    react-native-reanimated: "npm:^3.1.0"
-    react-native-safe-area-context: "npm:^4.5.3"
+    react-native-gesture-handler: "npm:~2.9.0"
+    react-native-reanimated: "npm:~2.14.4"
+    react-native-safe-area-context: "npm:4.5.0"
     react-native-safe-area-view: "npm:^1.1.1"
     react-native-screens: "npm:^3.20.0"
     react-navigation: "npm:^4.4.4"
@@ -7276,6 +7269,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: d413585fd1dbcb6ebed6d9d98a7fe5e10cc6f653b6676a61a69185aa1f6ae5b4aac1367a632db0ee46197ee1ab6aa5b7428c1721f9b5459a3623e0cc930b9b77
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -9199,9 +9199,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:^2.10.1":
-  version: 2.10.1
-  resolution: "react-native-gesture-handler@npm:2.10.1"
+"react-native-gesture-handler@npm:~2.9.0":
+  version: 2.9.0
+  resolution: "react-native-gesture-handler@npm:2.9.0"
   dependencies:
     "@egjs/hammerjs": "npm:^2.0.17"
     hoist-non-react-statics: "npm:^3.3.0"
@@ -9211,7 +9211,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: cab8c17ca54fca9b2f52aa4d5996fa383387c92d0092e37b21a196d91fda667615709a0e8a7729d9fa6fb3424f58963c4293c1ea5bb8dc38e28c30ae2bf4a385
+  checksum: 1dc04b60d2fa1eb6a1f90a3fd01910d399f9110de7369291af245d0264999454545977324dd1006b3187687173e2e76f8c3cf19f03b20863689af195a933dfab
   languageName: node
   linkType: hard
 
@@ -9222,34 +9222,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "react-native-reanimated@npm:3.1.0"
+"react-native-reanimated@npm:~2.14.4":
+  version: 2.14.4
+  resolution: "react-native-reanimated@npm:2.14.4"
   dependencies:
     "@babel/plugin-transform-object-assign": "npm:^7.16.7"
     "@babel/preset-typescript": "npm:^7.16.7"
-    convert-source-map: "npm:^2.0.0"
+    convert-source-map: "npm:^1.7.0"
     invariant: "npm:^2.2.4"
+    lodash.isequal: "npm:^4.5.0"
+    setimmediate: "npm:^1.0.5"
+    string-hash-64: "npm:^1.0.3"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.0.0-0
-    "@babel/plugin-proposal-optional-chaining": ^7.0.0-0
-    "@babel/plugin-transform-arrow-functions": ^7.0.0-0
-    "@babel/plugin-transform-shorthand-properties": ^7.0.0-0
-    "@babel/plugin-transform-template-literals": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: ee471903f76ed5751b57350528bdf3e8a91e0def6aabc972633a7a95a39e0d8856acb8184aa2a156a108f3de8955d1602c42deddef638602d2ebeff5452a953a
+  checksum: 67899e24fac2444bd8450a32296c693bec82600c54b483c0f920e43d8712ddc1ecb90c6939da40df0d81f53e9d7c91d150e44ec9865b596ae43e844c90e04ffb
   languageName: node
   linkType: hard
 
-"react-native-safe-area-context@npm:^4.5.3":
-  version: 4.5.3
-  resolution: "react-native-safe-area-context@npm:4.5.3"
+"react-native-safe-area-context@npm:4.5.0":
+  version: 4.5.0
+  resolution: "react-native-safe-area-context@npm:4.5.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: e1d74cf232bf84559323ad74ceb89f7465eb15c34baa98096d383a8179938bc406b873bf0c7c44fab8804d1030c2de3914fde8d063715be7d7305457ebd6c04d
+  checksum: 4ca20c7cfd39a66e33de59b01265374f6f94de0805b10ae0d6c1480ff738f55d2ecead28be663b8a8f13e15207f8f2f5fdbdba4ed179d87c49b88c246bf0a06e
   languageName: node
   linkType: hard
 
@@ -10312,6 +10310,13 @@ __metadata:
   version: 2.0.0
   resolution: "strict-uri-encode@npm:2.0.0"
   checksum: 3dccd623de057e3b9646be72dd6d5b2dc18ab7abccfcc8276a2b7d3fde7f4159e24e3324b475e87cce6b0d0c8e58e1a632714f85fa9c76f756ea5e456dc520a0
+  languageName: node
+  linkType: hard
+
+"string-hash-64@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "string-hash-64@npm:1.0.3"
+  checksum: 94ffc945b03f1243db4dc2fab4e920cebb3e738c4ed619c975f5102f6f2c4fb85e43fca5a94e24f9f91a01d5bb2864569be7d7dbdc6267f72a51b0a47b39e496
   languageName: node
   linkType: hard
 

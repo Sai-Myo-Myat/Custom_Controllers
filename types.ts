@@ -1,5 +1,9 @@
 export interface FormInputType {
   isChecked: false | true;
+  inputFields: {
+    name: string;
+    value: string;
+  }[];
 }
 
 export interface CheckBoxType {
@@ -16,4 +20,5 @@ export interface CustomBtnType {
 export type RootStackParamsList = {
   Home: undefined;
   Form: undefined;
+  ListForm: undefined;
 };
