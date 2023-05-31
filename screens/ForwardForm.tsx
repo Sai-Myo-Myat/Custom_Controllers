@@ -1,13 +1,14 @@
-import React, { MutableRefObject, forwardRef } from "react";
+import React, { MutableRefObject, forwardRef, HTMLInputTypeAttribute, LegacyRef } from "react";
 import { TextInput, TextInputProps } from "react-native";
 interface Props extends TextInputProps {
     placeholder: string;
-    ref: MutableRefObject<null>
 }
 
-const ForwardForm = forwardRef<Props>(({placeholder, ...prps},ref) => {
+type Ref = LegacyRef<TextInputProps> | undefined
+
+const ForwardForm = forwardRef<Ref ,Props>((props,ref) => {
     return (
-        <TextInput placeholder={placeholder} ref={ref}/>
+        <TextInput placeholder={props.placeholder} ref={ref as Ref | any}/>
     )
 })
 
