@@ -24,7 +24,7 @@ export default function App() {
   return (
     <FormProvider {...methods}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="ListForm">
+        <Stack.Navigator initialRouteName="Form">
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Form" component={Form} />
           <Stack.Screen name="ListForm" component={ListForm} />

@@ -4,11 +4,11 @@ interface Props extends TextInputProps {
     placeholder: string;
 }
 
-type Ref = LegacyRef<TextInputProps> | undefined
+type Ref = LegacyRef<TextInputProps>
 
 const ForwardForm = forwardRef<Ref ,Props>((props,ref) => {
     return (
-        <TextInput placeholder={props.placeholder} ref={ref as Ref | any}/>
+        <TextInput placeholder={props.placeholder} ref={ref as LegacyRef<TextInputProps> | undefined | any}/>
     )
 })
 
